@@ -6,7 +6,7 @@
 /*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/05 21:57:39 by marvin            #+#    #+#             */
-/*   Updated: 2026/01/06 02:40:24 by marvin           ###   ########.fr       */
+/*   Updated: 2026/01/06 13:16:33 by marvin           ###   ########.fr       */
 /*                                                                            */
 /******************************************************************************/
 
@@ -73,6 +73,6 @@ int	ft_putunbr(unsigned int n)
 	len = 0;
 	if (n >= 10)
 		len += ft_putunbr(n / 10);
-	len += ft_putunbr(n % 10 + '0');
+	len += ft_putchar(n % 10 + '0');
 	return (len);
 }

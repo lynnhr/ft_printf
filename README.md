@@ -18,8 +18,8 @@ git clone <repository_url>
 cd ft_printf
 
 # Compile the library and test files
-make
 make fclean
+make
 
 ```
 ## Resources
