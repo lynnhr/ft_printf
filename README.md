@@ -21,14 +21,11 @@ cd ft_printf
 make
 make fclean
 
-# Run tests
-gcc -o test main.c -L. -lftprintf
-./test
 ```
 ## Resources
 - **Documentation & References**
   - [C Standard Library `printf`](https://www.cplusplus.com/reference/cstdio/printf/)  
-  - [StackOverflow] (https://stackoverflow.com/questions/4744650/nil-pointer-in-c-c)
+  - [StackOverflow](https://stackoverflow.com/questions/4744650/nil-pointer-in-c-c)
 
 
 
