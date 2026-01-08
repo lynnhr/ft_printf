@@ -6,7 +6,7 @@
 /*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/05 21:57:45 by marvin            #+#    #+#             */
-/*   Updated: 2026/01/06 19:07:11 by marvin           ###   ########.fr       */
+/*   Updated: 2026/01/08 08:34:09 by marvin           ###   ########.fr       */
 /*                                                                            */
 /******************************************************************************/
 
@@ -31,7 +31,7 @@ int	ft_puthex(unsigned long n, char format)
 static int	ft_check(char c, va_list args)
 {
 	int	len;
-	
+
 	len = 0;
 	if (c == 'c')
 		len = ft_putchar(va_arg(args, int));
@@ -57,8 +57,8 @@ static int	ft_check(char c, va_list args)
 
 int	ft_printf(const char *format, ...)
 {
-	int	i;
-	int	len;
+	int		i;
+	int		len;
 	va_list	args;
 
 	i = 0;
@@ -66,12 +66,12 @@ int	ft_printf(const char *format, ...)
 	va_start(args, format);
 	while (format[i])
 	{
-		if(format[i] == '%')
+		if (format[i] == '%')
 		{
-			if(format[i + 1] == '\0')
+			if (format[i + 1] == '\0')
 			{
 				len += ft_putchar('%');
-				break;
+				break ;
 			}
 			i++;
 			len += ft_check(format[i], args);
