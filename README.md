@@ -14,7 +14,7 @@ To compile and run the project:
 
 ```bash
 # Clone the repository
-git clone <repository_url>
+git clone https://github.com/lynnhr/ft_printf
 cd ft_printf
 
 # Compile the library and test files
